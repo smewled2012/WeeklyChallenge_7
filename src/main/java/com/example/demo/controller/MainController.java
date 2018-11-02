@@ -77,7 +77,7 @@ public class MainController {
     }
 
     //display the list of employees
-    @RequestMapping("employeelist")
+    @RequestMapping("/employeelist")
     public String showEmployee(Model model){
 
         model.addAttribute("employees", employeeRepository.findAll());
@@ -105,9 +105,8 @@ public class MainController {
     @RequestMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable("id") long id){
         employeeRepository.deleteById(id);
-        return "employeelist";
+        return "homepage";
     }
-
 
 
 }

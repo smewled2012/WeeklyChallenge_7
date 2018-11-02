@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import org.hibernate.annotations.Fetch;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,7 +14,8 @@ public class Employee {
     private String name;
     private String title;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="department_id")
     private Department department;
 
     public Long getId() {

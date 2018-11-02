@@ -3,22 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Employee List </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
-<a href="/"> <strong>Home</strong>&nbsp;&nbsp;</a>
-<a href="/employeelist"> <strong>All Employees &nbsp;&nbsp;</strong></a>
-<a href="/departmentlist"> <strong>All Departments &nbsp;&nbsp;</strong></a>
-<a href="/addemployee"> <strong>Add Employees  &nbsp;&nbsp; </strong></a>
-<a href="/adddepartment"> <strong> Add Department </strong></a>
+<div>
 
-<div align="center">
-    <h1> Sterling Solutions: Employee Database </h1>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top text-center">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/employeelist">All Employees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/departmentlist">All Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/addemployee">Add Employees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/adddepartment">Add Department</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron text-center">
+        <h1>
+            Sterling Solutions: Employee Database
+        </h1>
+    </div>
 </div>
 
-
+<div class="container">
 <h3> Employees List </h3>
 
-<table>
+<table class="table table-borderless table-hover shadow mb-4 bg-white">
     <tr>
         <th> Employee Name &nbsp;&nbsp;</th>
         <th> Title &nbsp;&nbsp;</th>
@@ -37,9 +73,16 @@
         </td>
     </tr>
 
-
-
 </table>
+
+</div>
+
+
+<div>
+    <script src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</div>
 
 </body>
 </html>

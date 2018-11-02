@@ -10,7 +10,7 @@ public class Department {
     private long id;
 
     private String name;
-    @OneToMany
+    @OneToMany(mappedBy = "department", cascade=CascadeType.ALL,fetch=FetchType.EAGER)
 
     public long getId() {
         return id;
