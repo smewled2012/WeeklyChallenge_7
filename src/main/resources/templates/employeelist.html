@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee List </title>
+</head>
+<body>
+<a href="/"> <strong>Home</strong>&nbsp;&nbsp;</a>
+<a href="/employeelist"> <strong>All Employees &nbsp;&nbsp;</strong></a>
+<a href="/departmentlist"> <strong>All Departments &nbsp;&nbsp;</strong></a>
+<a href="/addemployee"> <strong>Add Employees  &nbsp;&nbsp; </strong></a>
+<a href="/adddepartment"> <strong> Add Department </strong></a>
+
+<div align="center">
+    <h1> Sterling Solutions: Employee Database </h1>
+</div>
+
+
+<h3> Employees List </h3>
+
+<table>
+    <tr>
+        <th> Employee Name &nbsp;&nbsp;</th>
+        <th> Title &nbsp;&nbsp;</th>
+        <th>  Department &nbsp;&nbsp; </th>
+        <td>  &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    </tr>
+    <tr th:each=" employee: ${employees}">
+        <td th:text="${employee.name}"></td>
+        <td th:text="${employee.title}"> </td>
+        <td th:text="${employee.department.name}"> </td>
+        <td>
+            <a th:href="@{/update/{id}(id=${employee.id})}"> Update </a>
+            <a th:href="@{/detail/{id}(id=${employee.id})}"> Detail </a>
+            <a th:href="@{/delete/{id}(id=${employee.id})}"> Delete  </a>
+        </td>
+    </tr>
+
+
+
+</table>
+
+</body>
+</html>

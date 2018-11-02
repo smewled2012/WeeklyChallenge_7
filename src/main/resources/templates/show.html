@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Information </title>
+</head>
+<body>
+<a href="/"> <strong>Home</strong>&nbsp;&nbsp;</a>
+<a href="/employeelist"> <strong>All Employees &nbsp;&nbsp;</strong></a>
+<a href="/departmentlist"> <strong>All Departments &nbsp;&nbsp;</strong></a>
+<a href="/addemployee"> <strong>Add Employees  &nbsp;&nbsp; </strong></a>
+<a href="/adddepartment"> <strong> Add Department </strong></a>
+
+<div align="center">
+    <h1> Sterling Solutions: Employee Database </h1>
+</div>
+
+            <span th:text="${employee.name}"></span>  <br /> <br />
+<strong>Title: </strong> <span th:text="${employee.title}"></span><br />
+<strong>Department: </strong><span th:text="${employee.department.name}"></span>
+
+</body>
+</html>
