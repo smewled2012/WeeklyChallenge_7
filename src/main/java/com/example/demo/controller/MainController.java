@@ -1,5 +1,12 @@
 package com.example.demo.controller;
 
+
+/* The programs registers departments first and then employees from the form
+* we can see the list of all employees with their details
+* we can also see the list of the departments
+* it saves it in MySQL database
+* for each employee there is an option to update, see Detail or Delete an Employee
+* */
 import com.example.demo.model.Department;
 import com.example.demo.model.Employee;
 import com.example.demo.repository.DepartmentRepository;
