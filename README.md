@@ -1,4 +1,4 @@
-# Department and Employee Registaration 
+# Department and Employee Registaration Application
 
 The project is a simple Department and Employee Registaration for Sterling Company with User Interface form to input information and 
 it conatins different templates for Employee Registration, Department Registration, to see list of Employees and list of Departments.
