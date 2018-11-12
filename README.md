@@ -12,7 +12,7 @@ and also deleting the an employee.
 3. Bootstrap and 
 4. MySQL Database 
 
-# Demonstartion of the project 
+# Demonstration of the project 
 
 Find a heroku link below to demonstrate and see what the application looks like and how it is functioning! 
 
