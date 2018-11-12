@@ -12,8 +12,8 @@ and also deleting the an employee.
 3. Bootstrap and 
 4. MySQL Database 
 
-#Demonstartion of the project 
+# Demonstartion of the project 
 
-find a heroku link below to demonstrate and see what the application looks like and how it is functioning! 
+Find a heroku link below to demonstrate and see what the application looks like and how it is functioning! 
 
 https://nameless-tor-83098.herokuapp.com/
